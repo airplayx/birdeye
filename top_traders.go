@@ -9,16 +9,16 @@ type TopTraders struct {
 	Success bool `json:"success"`
 	Data    struct {
 		Items []struct {
-			TokenAddress string        `json:"tokenAddress"`
-			Owner        string        `json:"owner"`
-			Tags         []interface{} `json:"tags"`
-			Type         string        `json:"type"`
-			Volume       float64       `json:"volume"`
-			Trade        int           `json:"trade"`
-			TradeBuy     int           `json:"tradeBuy"`
-			TradeSell    int           `json:"tradeSell"`
-			VolumeBuy    float64       `json:"volumeBuy"`
-			VolumeSell   float64       `json:"volumeSell"`
+			TokenAddress string  `json:"tokenAddress"`
+			Owner        string  `json:"owner"`
+			Tags         []any   `json:"tags"`
+			Type         string  `json:"type"`
+			Volume       float64 `json:"volume"`
+			Trade        int     `json:"trade"`
+			TradeBuy     int     `json:"tradeBuy"`
+			TradeSell    int     `json:"tradeSell"`
+			VolumeBuy    float64 `json:"volumeBuy"`
+			VolumeSell   float64 `json:"volumeSell"`
 		} `json:"items"`
 	} `json:"data"`
 }

@@ -17,10 +17,10 @@ type Markets struct {
 				Symbol   string `json:"symbol"`
 				Icon     string `json:"icon"`
 			} `json:"base"`
-			CreatedAt time.Time   `json:"createdAt"`
-			Liquidity float64     `json:"liquidity"`
-			Name      string      `json:"name"`
-			Price     interface{} `json:"price"`
+			CreatedAt time.Time `json:"createdAt"`
+			Liquidity float64   `json:"liquidity"`
+			Name      string    `json:"name"`
+			Price     any       `json:"price"`
 			Quote     struct {
 				Address  string `json:"address"`
 				Decimals int    `json:"decimals"`
