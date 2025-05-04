@@ -25,9 +25,25 @@ func NewClient(apiKey string) *Client {
 
 // birdEye defines the interface for all response birdEye
 type birdEye interface {
-	TradeData |
+	TradeDataSingle |
 		TokenOverview |
-		TokenListV1
+		TokenListV1 |
+		TokenListV3 |
+		TokenListV3Scroll |
+		MetaDataSingle |
+		MetaDataMultiple |
+		MarketDataSingle |
+		MarketDataMultiple |
+		TradeDataMultiple |
+		Holder |
+		NewListing |
+		TopTraders |
+		Markets |
+		TokenTrending |
+		TokenSecurity |
+		TokenCreationInfo |
+		MintBurnTxs |
+		Trades
 }
 
 // cli represents a Birdeye API cli with generic type support
