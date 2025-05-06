@@ -9,7 +9,7 @@ type TradeData struct {
 	Address                      string  `json:"address"`
 	Holder                       int     `json:"holder"`
 	Market                       int     `json:"market"`
-	LastTradeUnixTime            int     `json:"last_trade_unix_time"`
+	LastTradeUnixTime            int64   `json:"last_trade_unix_time"`
 	LastTradeHumanTime           string  `json:"last_trade_human_time"`
 	Price                        float64 `json:"price"`
 	History30MPrice              float64 `json:"history_30m_price"`

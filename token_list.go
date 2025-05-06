@@ -8,13 +8,13 @@ import (
 type TokenListV1 struct {
 	Success bool `json:"success"`
 	Data    struct {
-		UpdateUnixTime int    `json:"updateUnixTime"`
+		UpdateUnixTime int64  `json:"updateUnixTime"`
 		UpdateTime     string `json:"updateTime"`
 		Tokens         []struct {
 			Address           string  `json:"address"`
 			Decimals          int     `json:"decimals"`
 			Price             float64 `json:"price"`
-			LastTradeUnixTime int     `json:"lastTradeUnixTime"`
+			LastTradeUnixTime int64   `json:"lastTradeUnixTime"`
 			Liquidity         float64 `json:"liquidity"`
 			LogoURI           string  `json:"logoURI"`
 			Mc                float64 `json:"mc"`
@@ -66,7 +66,7 @@ type TokenListV3 struct {
 			MarketCap              float64 `json:"market_cap"`
 			Fdv                    float64 `json:"fdv"`
 			Liquidity              float64 `json:"liquidity"`
-			LastTradeUnixTime      int     `json:"last_trade_unix_time"`
+			LastTradeUnixTime      int64   `json:"last_trade_unix_time"`
 			Volume1HUsd            float64 `json:"volume_1h_usd"`
 			Volume1HChangePercent  float64 `json:"volume_1h_change_percent"`
 			Volume2HUsd            float64 `json:"volume_2h_usd"`
@@ -127,7 +127,7 @@ type TokenListV3Scroll struct {
 			MarketCap              float64 `json:"market_cap"`
 			Fdv                    float64 `json:"fdv"`
 			Liquidity              float64 `json:"liquidity"`
-			LastTradeUnixTime      int     `json:"last_trade_unix_time"`
+			LastTradeUnixTime      int64   `json:"last_trade_unix_time"`
 			Volume1HUsd            float64 `json:"volume_1h_usd"`
 			Volume1HChangePercent  float64 `json:"volume_1h_change_percent"`
 			Volume2HUsd            float64 `json:"volume_2h_usd"`

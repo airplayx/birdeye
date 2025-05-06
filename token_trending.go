@@ -7,7 +7,7 @@ import (
 
 type TokenTrending struct {
 	Data struct {
-		UpdateUnixTime int    `json:"updateUnixTime"`
+		UpdateUnixTime int64  `json:"updateUnixTime"`
 		UpdateTime     string `json:"updateTime"`
 		Tokens         []struct {
 			Address                string  `json:"address"`

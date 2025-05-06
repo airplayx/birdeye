@@ -23,7 +23,7 @@ type TokenOverview struct {
 		} `json:"extensions"`
 		LogoURI                      string  `json:"logoURI"`
 		Liquidity                    float64 `json:"liquidity"`
-		LastTradeUnixTime            int     `json:"lastTradeUnixTime"`
+		LastTradeUnixTime            int64   `json:"lastTradeUnixTime"`
 		LastTradeHumanTime           string  `json:"lastTradeHumanTime"`
 		Price                        float64 `json:"price"`
 		History30MPrice              float64 `json:"history30mPrice"`

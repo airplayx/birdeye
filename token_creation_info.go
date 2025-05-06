@@ -13,7 +13,7 @@ type TokenCreationInfo struct {
 		TokenAddress   string    `json:"tokenAddress"`
 		Decimals       int       `json:"decimals"`
 		Owner          string    `json:"owner"`
-		BlockUnixTime  int       `json:"blockUnixTime"`
+		BlockUnixTime  int64     `json:"blockUnixTime"`
 		BlockHumanTime time.Time `json:"blockHumanTime"`
 	} `json:"data"`
 }
